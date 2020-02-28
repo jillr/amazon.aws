@@ -13,6 +13,9 @@
           region: '{{ aws_region }}'
       block:
 
+      collections:
+        - community.amazon
+
         - set_fact:
             instance_id: "{{ resource_prefix }}-mariadb"
 

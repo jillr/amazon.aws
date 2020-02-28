@@ -4,6 +4,8 @@
   gather_facts: no
   environment: "{{ ansible_test.environment }}"
   tasks:
+  collections:
+    - community.amazon
 
     - module_defaults:
         group/aws:

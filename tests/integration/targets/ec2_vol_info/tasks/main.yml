@@ -10,6 +10,9 @@
   no_log: true
 
 - block:
+  collections:
+    - community.amazon
+
     - ec2_ami_info:
         owners: amazon
         <<: *aws_connection_info
